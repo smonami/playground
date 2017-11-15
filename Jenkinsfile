@@ -32,5 +32,10 @@ pipeline {
         archiveArtifacts 'target/*.jar'
       }
     }
+    stage('End') {
+      steps {
+        echo 'Ended'
+      }
+    }
   }
 }
